@@ -3,8 +3,8 @@ import '@atlaskit/css-reset' // import css library
 import styled from 'styled-components'
 import { DragDropContext } from 'react-beautiful-dnd'
 import db from './firebaseConfig'
-import initialData from './initial-data'
-//import emptyData from './emptyData'
+//import initialData from './initial-data'
+import emptyData from './emptyData'
 import Column from './components/Column.jsx'
 import Button from './components/Button'
 import './index.css'
@@ -17,10 +17,12 @@ const Container = styled.div`
 	display: flex;
 `
 const App = () => {
-	const [data, setData] = useState(initialData)
+	const [data, setData] = useState(emptyData)
 	const fetchData = async () => {
+		console.log('hello')
 		const res = await db.collection('ToDo').get()
 		const DB = res.docs.map((data) => data.data())
+
 		setData(DB[0])
 	}
 

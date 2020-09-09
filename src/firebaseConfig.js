@@ -1,5 +1,5 @@
-import * as firebase from 'firebase';
-import 'firebase/database';
+import * as firebase from 'firebase'
+import 'firebase/database'
 
 const firebaseConfig = {
 	apiKey: 'AIzaSyCt3IJPhAIUAYHjtqcav1EBa09Tq-N87_o',
@@ -9,8 +9,8 @@ const firebaseConfig = {
 	storageBucket: 'dodone-ae3d0.appspot.com',
 	messagingSenderId: '451148905723',
 	appId: '1:451148905723:web:e829dfb044f34768c4c45e',
-};
+}
 // Initialize Firebase
-firebase.initializeApp(firebaseConfig);
+firebase.initializeApp(firebaseConfig)
 
-export default firebase.firestore();
+export default firebase.firestore()
