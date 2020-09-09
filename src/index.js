@@ -9,7 +9,7 @@ import '@atlaskit/css-reset' // import css library
 // import Column from './Column.jsx';
 // import Button from './Button';
 import App from './App'
-import { BrowserRouter as Router, Route } from 'react-router-dom'
+import { HashRouter as Router, Route } from 'react-router-dom'
 
 import About from './components/About'
 import Navbar from './components/Navbar'
